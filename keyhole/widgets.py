@@ -4,7 +4,7 @@ import base64
 try:
     from io import BytesIO
 except ImportError:
-    from cStringIO import StringIO as BytesIO
+    from io import StringIO as BytesIO
 
 from django.core.files.uploadedfile import InMemoryUploadedFile
 from django.utils.safestring import mark_safe
